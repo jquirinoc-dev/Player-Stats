@@ -10,3 +10,7 @@
     max-width: 1200px;
     margin: 1rem
 }
+
+.players .element {
+    margin: 2rem 0;
+}

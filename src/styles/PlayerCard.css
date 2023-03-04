@@ -1,0 +1,69 @@
+
+
+.card-wrapper {
+    aspect-ratio: 2/3;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 1rem;
+    cursor: pointer;
+    /* white drop shadow */
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.player-card-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+
+.card-wrapper:hover .player-card-container {
+    transform: rotateY(180deg);
+}   
+
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.element .bottom-reaction-button {
+    margin: 0 1rem 0 1.5rem;
+    position: relative;
+}
+
+.element .bottom-reaction-button .reaction-button {
+    position: absolute;
+}
+
+.element .bottom-reaction-button .reaction-button img {
+    padding: 0.6rem;
+    padding-top: 0.8rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.element .bottom-reaction-button .reaction-button img:hover {
+    transform: scale(1.2);
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
