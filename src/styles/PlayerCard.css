@@ -7,8 +7,6 @@
     position: relative;
     margin: 0 1rem;
     cursor: pointer;
-    /* white drop shadow */
-    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.5);
 }
 
 .player-card-container {
@@ -30,6 +28,7 @@
     height: 100%;
     border-radius: 10px;
     backface-visibility: hidden;
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.5);
 }
 
 .card-front img {
@@ -51,7 +50,7 @@
 .element .bottom-reaction-button .reaction-button img {
     padding: 0.6rem;
     padding-top: 0.8rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -66,4 +65,97 @@
     border-radius: 10px;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    background-color: #161d26;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;  
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.5); 
+}
+
+.card-back-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-back-content .headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-back-content .headers h1 {
+    margin: 1rem 0 0 0;
+}
+
+.card-back-content .headers h2 {
+    margin: 1rem 0 0 0;
+
+    font-size: 5rem;
+}
+
+
+.card-back-content .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back-content .stats .left {
+    padding-right: 1.5rem;
+}
+
+.card-back-content .stats .right {
+    padding-left: 1.5rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.stat {
+    margin: 2rem 0;
+}
+
+.stat .value {
+    display: block;
+    position: relative;
+}
+
+.stat .value::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: -10px;
+    width: 1px;
+    height: 15px;
+    background-color: #fff;
+    /* margin: 0 1rem; */
+}
+
+.stat h3 {
+    margin: 0 0.6rem 0 0.6rem;
+}
+
+.card-back-content .stats .left::after {
+    content: "";
+    position: absolute;
+    top: 58%;
+    right: 0;
+    right: 50%;
+    display: block;
+    width: 1px;
+    height: 150px;
+    background-color: #fff;
+    /* margin: 0 1rem; */
 }
