@@ -5,8 +5,8 @@
     width: 300px;
     border-radius: 10px;
     position: relative;
+    cursor: grab;
     margin: 0 1rem;
-    cursor: pointer;
 }
 
 .player-card-container {
