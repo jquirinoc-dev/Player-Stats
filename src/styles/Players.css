@@ -14,3 +14,70 @@
 .players .element {
     margin: 2rem 0;
 }
+
+
+.add-player {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.add-player .add-player-button {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    display: flex;
+    background-color: #2dc96b;
+    cursor: pointer;
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.add-player .add-player-button img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.add-player .add-player-button.green {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    display: flex;
+    background-color: #2dc96b;
+    cursor: pointer;
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.add-player .add-player-button.green:hover {
+    transform: translateY(0.5rem);
+    background-color: #71eca2;
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.add-player .add-player-button.red {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    background-color: #e93b35;
+}
+
+.add-player .add-player-button.red:hover {
+    background-color: #fd7672;
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-0.5rem);
+}
+
+

@@ -18,10 +18,10 @@
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 #root {
-  padding: 3rem;
   align-items: center;
   justify-content: center;
 }
