@@ -38,11 +38,10 @@
     justify-content: center;
     width: 300px;
     margin: 0 0 10px 0;
-    transform: scaleY(0);
-    transform-origin: top left;
+    padding: 10px;
     transition: all 0.3s ease-in-out;
-    margin-right: 1rem;
-}
+  }
+
 
 .player-form-content.active .player-form-input {
     transform: scaleY(1);
@@ -52,11 +51,26 @@
 
 .player-form-input input {
     padding: 1rem;
-    border-radius: 0.5rem;
     border: none;
-    color: #fff;
-    /* font-size: 1.2rem; */
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
+}
+
+.player-form-input input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+/* .player-form-input input:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+} */
+
+.player-form-input input::placeholder {
+    color: #bebebe;
+    font-size: 1rem
 }
 
 #image-label {
@@ -100,11 +114,11 @@
     cursor: pointer;
     background-color: #2dc96b;
     transition: all 0.2s ease-in-out;
-    transform: translateY(-0.25rem);
+    transform: translateY(1.5rem);
 }
 
 .submit-button button:hover {
-    transform: translateY(0.5rem);
+    transform: translateY(1rem);
     background-color: #71eca2;
 }
 

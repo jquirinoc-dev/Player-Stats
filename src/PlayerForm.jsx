@@ -61,40 +61,32 @@ export const PlayerForm = ( { show, onPlayerSubmit } ) => {
         <form className="player-form-inputs">
             <div className='wrapper'>
                 <div className="player-form-input">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" name="name" id="name" />
+                    
+                    <input type="text" name="name" id="name" placeholder='Player name'/>
                 </div>
                 <div className="player-form-input">
-                    <label htmlFor="position">Position</label>
-                    <input type="text" name="position" id="position" />
+                    <input type="text" name="position" id="position" placeholder='Playing position'/>
                 </div>
                 <div className="player-form-input">
-                    <label htmlFor="pace">Pace</label>
-                    <input type="text" name="pace" id="pace" />
+                    <input type="text" name="pace" id="pace" placeholder='Pace'/>
                 </div>
                 <div className="player-form-input">
-                    <label htmlFor="shooting">Shooting</label>
-                    <input type="text" name="shooting" id="shooting" />
+                    <input type="text" name="shooting" id="shooting" placeholder='Shooting'/>
                 </div>
                 <div className="player-form-input">
-                    <label htmlFor="passing">Passing</label>
-                    <input type="text" name="passing" id="passing" />
+                    <input type="text" name="passing" id="passing" placeholder='Passing'/>
                 </div>
                 <div className="player-form-input">
-                    <label htmlFor="position">Dribbling</label>
-                    <input type="text" name="dribbling" id="dribbling" />
+                    <input type="text" name="dribbling" id="dribbling" placeholder='Dribbling'/>
                 </div>
                 <div className="player-form-input">
-                    <label htmlFor="defending">Defending</label>
-                    <input type="text" name="defending" id="defending" />
+                    <input type="text" name="defending" id="defending" placeholder='Defending'/>
                 </div>
                 <div className="player-form-input">
-                    <label htmlFor="physical">Physical</label>
-                    <input type="text" name="physical" id="physical" />
+                    <input type="text" name="physical" id="physical" placeholder='Physical'/>
                 </div>
                 <div className="player-form-input">
-                    <label htmlFor="overall">Overall</label>
-                    <input type="text" name="overall" id="overall" />
+                    <input type="text" name="overall" id="overall" placeholder='Overall'/>
                 </div>
                 <div className="player-form-input" id='image-label-input'>
                     <label htmlFor="image" id='image-label'><img src={ image } alt="" />{selectedImage ? <h3>{selectedImage.name}</h3> : ''}</label>
