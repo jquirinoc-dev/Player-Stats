@@ -93,6 +93,7 @@ export const PlayerForm = ( { show, onPlayerSubmit } ) => {
                     <input type="file" name="image" id="image" onChange={(e) => setSelectedImage(e.target.files[0])}/>
                 </div>
             </div>
+            {/* Checar que esté lleno el form. Estilo dependerá del "form completion state" */}
             <div className="submit-button">
                 <button type="submit">
                     <img src={ check } alt="" />
